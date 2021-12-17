@@ -171,9 +171,7 @@
     color: #bf992f;
     */
   }
-  footer h3{
-    font-size: 1em;  
-  }
+
   p{
     font-size: 1em;
     line-height: 1.5em;
@@ -305,7 +303,7 @@
     width: 100%;
   }
   footer .content-wrapper{
-    width: 30%;
+    width: 90%;
     margin: 0px;
     padding: 0;
   }
@@ -318,23 +316,23 @@
     padding: 0;
     font-size: 1.5em; 
   }
-  .footer h3{
+  footer h3{
     display: flex;
     justify-content: space-around;
   }
 
   .contact img{
-    width: 30px;
+    width: 25px;
   }
 
   footer .social-icons img{
-    width: 70%;
+    width: 60%;
   }
 
   /* CONFINES OF SOCIAL ICONS AS A GROUP */
   footer .social-icons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; 
   }
 
@@ -342,13 +340,13 @@
 /**************************************************/
   /* COPYRIGHT */
   .copyright{
-    margin: 25px 30px 0 30px;
+    margin: 100px 30px 0 30px;
     width: 100%;
   }
-  .copyright h5{
+  h5{
     text-align: center;
     font-size: .5em;
-    margin: 0;
+    margin-top: 2px;
     color: #000;
   }
 
@@ -480,7 +478,7 @@
         max-width: 900px
       }
     /********** TAB GENERAL FONT INFO  ****/
-    h3{
+    footer h3{
       font-size: 2em;
       
     }
@@ -526,9 +524,9 @@
    
     /******** TAB HERO AREA *********/
     h1{
-      
       padding: 80px 30px 20px 30px;
     }
+
     .hero-area .content-wrapper{
       margin: 50px 0;
     }
@@ -556,6 +554,10 @@
     /***** ALT CONTENT WIDTHS *****/
     #portfolio article div{
       width: 52%;
+    }
+
+    .content{
+      width: 44%;
     }
 
     /***** BOTTOM MARGIN BETWEEN PORTFOLIO ITEMS *****/
@@ -655,12 +657,11 @@
 
     /* COPYRIGHT */
     .copyright h5{
-      margin: 20px 0 10px 0;
       font-size: .7em;
     }
 
     .copyright{
-      margin-top: 50px;
+      margin-top: 60px;
     }
     
   }
@@ -768,7 +769,7 @@
     }
 
     .copyright{
-      margin-top: 70px;
+      margin-top: 270px;
     }
 
     footer .copyright h5{
