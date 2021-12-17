@@ -1,263 +1,848 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+  Base styles: opinionated defaults
+  ========================================================================== */
+  html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  /*
+    * Remove text-shadow in selection highlight:
+    * https://twitter.com/miketaylr/status/12228805301
+    *
+    * Vendor-prefixed and regular ::selection selectors cannot be combined:
+    * https://stackoverflow.com/a/16982510/7133471
+    *
+    * Customize the background color to match your design.
+    */
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  /*
+    * A better looking default horizontal rule
+    */
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  /*
+    * Remove the gap between audio, canvas, iframes,
+    * images, videos and the bottom of their containers:
+    * https://github.com/h5bp/html5-boilerplate/issues/440
+    */
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  /*
+    * Remove default fieldset styles.
+    */
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  /*
+    * Allow only vertical resizing of textareas.
+    */
+  textarea {
+    resize: vertical;
+  }
+  /* ==========================================================================
+      Author's custom styles
+      ========================================================================== */
+      
+  /*---- GENERAL PAGES BASE STYLES ------*/
+  html{
+    font-size: 16px;
+  }
+  body{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 1em;
+    /*color: #dadbd0;
+    background-color: #18181a;
+    */
+    color: #000;
+    background-color: #fff;
+    
+  }
+  ul{
+    list-style-type: none;
+  }
+  
+  a{
+    color: #4b11d1;
+    text-decoration: none;
   }
 
-  a,
-  a:visited {
+  /* FOOTER SOCIAL ICON COLORS AND DEC 
+  footer a{
+    text-decoration: none;
+    color: #e2bb0d;
+  }
+  */
+
+  /* NAV COLOR AND DEC */
+  nav a{
+    text-decoration: none;
+    color: #292525;
+  }
+
+  /** HOVER **/
+  nav a:hover{
     text-decoration: underline;
+    /*color: #1d8ae4;*/
   }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
+  #portfolio a:hover,
+  #portfolio article img:hover{
+    color: #1d8ae4;
+  } 
+
+  /*  CONTENT WRAPPER  */
+  .content-wrapper{
+    width: 95%;
+    margin: 0;
+  }
+  /********** IMG *************/
+  header{
+    margin: 10% 0 15%;
   }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  /** HEADER LOGO **/
+  header figure{
+    margin-bottom: 5%;
   }
 
+  header img{
+    height: 140px;
+  }
+  
+  /** HERO BACKGROUND IMAGE **/
+  .hero-area{
+    background: url(../img/hero2-background.jpg) center no-repeat #18181a;
+    background-size: cover;
+    width: 100%;
+  }
+    /** ABOUT ME BACKGROUND IMAGE **/
+    #about-me{
+    background: url(../img/about-me.jpg) center no-repeat #18181a;
+    background-size: cover;
+    width: 100%; 
+  }
+
+  /** PORTFOLIO IMG **/
+  img{
+    width: 100%;
+  }
+  /* IMG BORDER COLOR AND WIDTH */
+  #portfolio figure img{
+    border: 5px solid;
+    color: #673ad1;
+  }
+  /********** GENERAL FONT INFO  ****/
+  h3{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 15% 0 10%;
+    text-align: center;
+    font-family:'Source Code Pro', sans-serif;
+    /* REMOVING COLOR SO IT STANDS OUT MORE
+    color: #bf992f;
+    */
+  }
+  footer h3{
+    font-size: 1em;  
+  }
+  p{
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  /*---------------------------------------
+              MOBILE STYLES
+  ----------------------------------------*/
+  /*********** HEADER *********/
+  header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+  }
+
+  header .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+  }
+
+  header div p{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .header-divider{
+    background-color: #646363;
+    height: 0px;
+    width: 100%;
+  }
+  header nav{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 10px 0;
+    margin: 5px 0;
+    width: 95%;
+  }
+  header ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    width: 80%;
+  }
+  header ul{
+    padding: 0;
+    margin: 0; 
+  }
+  header li{
+    font-size: 1.2em;
+    margin-top: 5px;
+    
+  }
+  /*********** HERO SECTION *********/
+    
+  .hero-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  h1{
+    font-size: 2em;
+    font-family: 'Source Code Pro', sans-serif;
+    padding: 80px 20px 50px 20px;
+    margin-left: 5%;
+    width: 47%;
+    color: #faf49e;
+    text-shadow: 1px 1px #18181a;
+  }
+  h1 span{
+    color: #f8cc0a;
+  }
+  /******* PORTFOLIO SECTION ******/
+  #portfolio{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+  }
+
+  #portfolio h2{
+    font-size: 1.2em;
+    text-align: center;
+    color: #c6c7d4;
+  }
+
+  #portfolio article{
+    padding: 2%;
+    margin-bottom: 17%;
+  }
+
+  #portfolio p{
+    padding: 0 5% 0;
+  }
+
+  #portfolio .divider{
+    background-color: #646363;
+    height: 0px;
+    width: 90%;
+  }
+  /****** ABOUT ME SECTION *******/
+  #about-me{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-shadow: .2px .2px #363680;
+  }
+  #about-me p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 110px 20px;
+    width: 90%;
+    color: #c6c7d4;
+    text-shadow: .4px .4px #363680;
+  }
+  /************ FOOTER ********/
+  footer{
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  footer .content-wrapper{
+    width: 30%;
+    margin: 0px;
+    padding: 0;
+  }
+  /* PADDING AROUND & ALL ICONS */
+  footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em; 
+  }
+  .footer h3{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact img{
+    width: 30px;
+  }
+
+  footer .social-icons img{
+    width: 70%;
+  }
+
+  /* CONFINES OF SOCIAL ICONS AS A GROUP */
+  footer .social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+  
+/**************************************************/
+  /* COPYRIGHT */
+  .copyright{
+    margin: 25px 30px 0 30px;
+    width: 100%;
+  }
+  .copyright h5{
+    text-align: center;
+    font-size: .5em;
+    margin: 0;
+    color: #000;
+  }
+
+    /* BACK TO TOP BUTTON STYLES */
+    .back-to-top {
+      margin: 0;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: 40px;
+      height: 40px;
+      display: none;
+      text-decoration: none;
+      color: #ffffff;
+
+      /* PLACEMENT OF ITEM */
+      z-index: 100;
+
+      /* BACKGROUND OF SQUARE COLOR*/
+      background-color: #4b11d1;
+
+      /* ARROW or CHANGE THE IMAGE URL */
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/259273/up-arrow2.svg");
+      
+      /* ARROW SIZING WITHIN BOX*/
+      background-size: 40% auto;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: .3s background-color ease-in-out;
+    }
+    
+    .back-to-top:hover, .back-to-top:focus {
+      background-color: #1d8ae4;
+    }
+   
+  /*This is hides the Back to Top text in the link, but keeps it for accessibility purposes */
+  .visually-hidden {
+      position: absolute !important;
+      height: 1px; width: 1px; 
+      overflow: hidden;
+      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px);
+      
+  }
+  /* ==========================================================================
+      Helper classes
+      ========================================================================== */
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+    * Hide visually and from screen readers
+    */
+  .hidden,
+  [hidden] {
+    display: none !important;
   }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
+    * Hide only visually, but have it available for screen readers:
+    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    *
+    * 1. For long content, line feeds are not interpreted as spaces and small width
+    *    causes content to wrap 1 word per line:
+    *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+    */
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  /*
+    * Extends the .sr-only class to allow the element
+    * to be focusable when navigated to via the keyboard:
+    * https://www.drupal.org/node/897638
+    */
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  /*
+    * Hide visually and from screen readers, but maintain layout
+    */
+  .invisible {
+    visibility: hidden;
+  }
+  /*
+    * Clearfix: contain floats
+    *
+    * For modern browsers
+    * 1. The space content is one way to avoid an Opera bug when the
+    *    `contenteditable` attribute is included anywhere else in the document.
+    *    Otherwise it causes space to appear at the top and bottom of elements
+    *    that receive the `clearfix` class.
+    * 2. The use of `table` rather than `block` is only necessary if using
+    *    `:before` to contain the top-margins of child elements.
+    */
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
+  }
+  .clearfix::after {
+    clear: both;
+  }
+  /* ==========================================================================
+      EXAMPLE Media Queries for Responsive Design.
+      These examples override the primary ('mobile first') styles.
+      Modify as content requires.
+      ========================================================================== */
+    /*----------------------------------------------------
+                        TABLET MEDIA QUERIES 
+    -----------------------------------------------------*/
+  @media only screen and (min-width: 800px){
+    /*----------- TAB GENERAL STYLES ------------------*/
+      .content-wrapper{
+        margin: 100px 0;
+        max-width: 900px
+      }
+    /********** TAB GENERAL FONT INFO  ****/
+    h3{
+      font-size: 2em;
+      
+    }
+    h1{
+      font-size: 3.5em;
+    }
+    p{
+      font-size: 1.2em;
+      line-height: 1.6em;
+    }
+    /********** TAB HEADER ***********/
+    header .content-wrapper{
+      margin: 15px 0;
+      width: 95%;
+    }
+    
+    header h2{
+      font-size: 2.9em;
+    }
+    header div p{
+      width: 100%;
+      font-size: 1.8em;
+    
+    }
+    .header-divider{
+      height: 0;
+      width: 0%;
+    }
+    
+    header nav{
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 0 10px 0;
+      width: 90%; 
+    }
+    
+    header li{
+      font-size: 1.8em;
+      margin-top: 5px; 
+    }
+    
+   
+    /******** TAB HERO AREA *********/
+    h1{
+      
+      padding: 80px 30px 20px 30px;
+    }
+    .hero-area .content-wrapper{
+      margin: 50px 0;
+    }
+   
+    /******** TAB PORTFOLIO *********/
+    #portfolio .content-wrapper{ 
+      width: 90%;
+    }
+
+    #portfolio figure{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      width: 44%;
+      margin: 0;
+    }
+
+    /***** ALTERNATING PORTFOLIO CONTENT SIDE BY SIDE ON DESKTOPS  *****/
+    #portfolio .content-wrapper-flip article{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    /***** ALT CONTENT WIDTHS *****/
+    #portfolio article div{
+      width: 52%;
+    }
+
+    /***** BOTTOM MARGIN BETWEEN PORTFOLIO ITEMS *****/
+    #portfolio article{
+      margin-bottom: 20%;
+    }
+
+
+    #portfolio h2{
+      font-size:  1.2em;
+      text-align: center;
+    }
+
+
+    #portfolio p{
+      font-size: 1.1;
+      padding: 0 20px;
+    }
+
+    #portfolio article{
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      align-items: center;
+      padding: 2%;
+    }
+
+/*    #portfolio figure img{
+      width: 100%;
+    }*/
+    
+    #portfolio .divider{
+      height: 0px;
+    }
+    
+    /******* TAB ABOUT ME ****/
+    #about-me .content-wrapper{
+      margin: 25px 0;
+    }
+    /*#about-me h3{
+      font-size: 1.9em;
+    }*/
+    #about-me p{
+      font-size: 1.3em;
+      padding: 20px 0 80px 20px;
+      width: 85%;
+    }
+    /******** TAB FOOTER ******/
+    footer{
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    footer .content-wrapper{
+        width: 90%;
+        margin: 60px;
+        padding: 0;
+    }
+   
+  /* PADDING AROUND & ALL ICONS */
+  footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 0 7% 0 7%;
   }
 
-  tr,
-  img {
-    page-break-inside: avoid;
+
+  footer #social{
+    width: 60%;
   }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  #contact-me{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
   }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+  .contact img{
+    width: 45px;
   }
-}
 
+  footer .social-icons img{
+    width: 100%;
+    font-size: 3em;
+  }
+
+  /* CONFINES OF SOCIAL ICONS AS A GROUP */
+  footer .social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 2% 0 2%;
+  }
+
+    /* COPYRIGHT */
+    .copyright h5{
+      margin: 20px 0 10px 0;
+      font-size: .7em;
+    }
+
+    .copyright{
+      margin-top: 50px;
+    }
+    
+  }
+    /*----------------------------------------------------
+                    DESKTOP MEDIA QUERIES 
+  -----------------------------------------------------*/
+  @media only screen and (min-width: 1200px){
+    /*----------- GENERAL STYLES ------------------*/
+  .content-wrapper{
+    max-width: 1100px;
+  } 
+    /******* DESK FONTS ************/
+    h3{
+      font-size: 2.5em; 
+    }
+
+    h1{
+      font-size: 4.5em;
+    }
+
+    p{
+      font-size: 1.3em;
+      line-height: 1.8em;
+    }
+
+    header h2{
+      font-size: 3.5em;
+    }
+
+    #portfolio article{
+      padding: 5%;
+    }
+
+    /********** DESK IMG *************/
+    /** HERO BACKGROUND IMAGE **/
+    .hero-area{
+      height: 700px;
+    }
+
+    /** TAB ABOUT ME BACKGROUND IMAGE **/
+    #about-me p{
+      width: 75%;
+    }
+
+  /********* DESK HEADER ********/
+    header div p{
+      font-size: 2.2em;
+    }
+
+    header li{
+      font-size: 2.2em;
+    }
+
+    /****** DESK PORTFOLIO ******/
+    #portfolio .content-wrapper{
+      width: 85%;
+    }
+
+    /***** ALTERNATING PORTFOLIO CONTENT SIDE BY SIDE ON DESKTOPS  *****/
+    #portfolio .content-wrapper-flip article{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    /***** ALT CONTENT WIDTHS *****/
+    #portfolio article div{
+      width: 44%;
+    }
+    #portfolio figure{
+      width: 50%;
+    }
+
+    #portfolio h2{
+      font-size:  1.8em;
+      text-align: left;
+      padding-left: 17px;
+      margin-left: 25px;
+    }
+
+    #portfolio p{
+      font-size: 1.5;
+    }
+
+    #portfolio article{
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+
+
+    #portfolio .divider{
+      height: 0px;
+    }
+
+    /******* DESK FOOTER *******/
+    footer .content-wrapper{
+      width: 80%;
+      margin: 60px;
+      padding: 0;
+    }
+
+    footer p{
+      font-size: 2.3em;
+      padding: 0 7% 0 7%;
+    }
+
+    .copyright{
+      margin-top: 70px;
+    }
+
+    footer .copyright h5{
+      margin: 10px 0 20px 0;
+      font-size: .9em;
+    }
+  }
+
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  /* ==========================================================================
+      Print styles.
+      Inlined to avoid the additional HTTP request:
+      https://www.phpied.com/delay-loading-your-print-css/
+      ========================================================================== */
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+    /*
+      * Don't show links that are fragment identifiers,
+      * or use the `javascript:` pseudo protocol
+      */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
+      * Printing Tables:
+      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+      */
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
