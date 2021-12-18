@@ -542,6 +542,12 @@
       width: 90%;
     }
 
+    /* ADJUSTS SIZE OF PORTFOLIO FIGURE ***/
+    
+    figure{
+      margin: 0 20px;
+    }
+
     #portfolio figure{
       display: flex;
       flex-flow: row wrap;
