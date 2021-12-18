@@ -95,13 +95,6 @@
     text-decoration: none;
   }
 
-  /* FOOTER SOCIAL ICON COLORS AND DEC 
-  footer a{
-    text-decoration: none;
-    color: #e2bb0d;
-  }
-  */
-
   /* NAV COLOR AND DEC */
   nav a{
     text-decoration: none;
@@ -162,9 +155,8 @@
   }
   /********** GENERAL FONT INFO  ****/
   h3{
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 700;
-    margin: 15% 0 10%;
     text-align: center;
     font-family:'Source Code Pro', sans-serif;
     /* REMOVING COLOR SO IT STANDS OUT MORE
@@ -303,22 +295,27 @@
     width: 100%;
   }
   footer .content-wrapper{
-    width: 90%;
-    margin: 0px;
+    width: 40%;
+    margin: 40px;
     padding: 0;
   }
+
   /* PADDING AROUND & ALL ICONS */
-  footer p{
+  footer p, 
+  footer p a{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
-    font-size: 1.5em; 
   }
+  
   footer h3{
-    display: flex;
-    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .contact{
+    margin-bottom: 60px;
   }
 
   .contact img{
@@ -333,7 +330,6 @@
   footer .social-icons{
     display: flex;
     justify-content: space-around;
-    align-items: center; 
   }
 
   
@@ -478,18 +474,21 @@
         max-width: 900px
       }
     /********** TAB GENERAL FONT INFO  ****/
-    footer h3{
-      font-size: 2em;
-      
+    h3{
+      font-size: 1.7em;
     }
+
     h1{
       font-size: 3.5em;
     }
+
     p{
       font-size: 1.2em;
       line-height: 1.6em;
     }
+
     /********** TAB HEADER ***********/
+
     header .content-wrapper{
       margin: 15px 0;
       width: 95%;
@@ -597,64 +596,45 @@
     #about-me .content-wrapper{
       margin: 25px 0;
     }
-    /*#about-me h3{
-      font-size: 1.9em;
-    }*/
+
     #about-me p{
       font-size: 1.3em;
       padding: 20px 0 80px 20px;
       width: 85%;
     }
     /******** TAB FOOTER ******/
-    footer{
-      justify-content: center;
-      flex-direction: row;
-    }
-
-    footer .content-wrapper{
-        width: 90%;
-        margin: 60px;
-        padding: 0;
-    }
-   
-  /* PADDING AROUND & ALL ICONS */
-  footer p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    margin: 0;
-    padding: 0 7% 0 7%;
+ footer{
+   justify-content: center;
+    flex-direction: row;
   }
 
-
-  footer #social{
-    width: 60%;
+ 
+  footer .content-wrapper{
+      width: 60%;
+      margin: 60px;
+      padding: 0;
   }
 
   #contact-me{
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
+    justify-content: space-between;
+    flex-flow: row wrap; 
+  } 
 
   .contact img{
-    width: 45px;
+    width: 35px;
+  } 
+ 
+  .contact{
+    margin-bottom: 0px;
   }
 
   footer .social-icons img{
-    width: 100%;
-    font-size: 3em;
+    width: 70%;
   }
 
-  /* CONFINES OF SOCIAL ICONS AS A GROUP */
-  footer .social-icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 0 2% 0 2%;
-  }
 
+/*****************************/
     /* COPYRIGHT */
     .copyright h5{
       font-size: .7em;
@@ -758,16 +738,13 @@
 
     /******* DESK FOOTER *******/
     footer .content-wrapper{
-      width: 80%;
-      margin: 60px;
+      width: 50%;
+      margin: 80px;
       padding: 0;
     }
 
-    footer p{
-      font-size: 2.3em;
-      padding: 0 7% 0 7%;
-    }
 
+    /************************/
     .copyright{
       margin-top: 270px;
     }
