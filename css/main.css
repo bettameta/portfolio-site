@@ -159,9 +159,6 @@
     font-weight: 700;
     text-align: center;
     font-family:'Source Code Pro', sans-serif;
-    /* REMOVING COLOR SO IT STANDS OUT MORE
-    color: #bf992f;
-    */
   }
 
   p{
@@ -250,6 +247,9 @@
     flex-flow: row wrap;
   }
 
+  #portfolio .content-wrapper{
+    margin-top: 15%;
+  }
   #portfolio h2{
     font-size: 1.2em;
     text-align: center;
@@ -271,6 +271,11 @@
     width: 90%;
   }
   /****** ABOUT ME SECTION *******/
+  
+  #about-me .content-wrapper{
+    margin-top: 15%;
+  }
+
   #about-me{
     display: flex;
     justify-content: center;
@@ -294,9 +299,10 @@
     flex-flow: row wrap;
     width: 100%;
   }
+
   footer .content-wrapper{
     width: 40%;
-    margin: 40px;
+    margin-top: 15%;
     padding: 0;
   }
 
@@ -311,17 +317,19 @@
   }
   
   footer h3{
-    margin-bottom: 10px;
+    margin-top: 10%;
   }
 
   .contact{
     margin-bottom: 60px;
   }
 
+/*** EMAIL ICON SIZE ***/
   .contact img{
     width: 25px;
   }
 
+/*** SM ICON SIZES ***/
   footer .social-icons img{
     width: 60%;
   }
@@ -331,7 +339,6 @@
     display: flex;
     justify-content: space-around;
   }
-
   
 /**************************************************/
   /* COPYRIGHT */
@@ -564,12 +571,10 @@
       margin-bottom: 20%;
     }
 
-
     #portfolio h2{
       font-size:  1.2em;
       text-align: center;
     }
-
 
     #portfolio p{
       font-size: 1.1;
@@ -583,19 +588,12 @@
       align-items: center;
       padding: 2%;
     }
-
-/*    #portfolio figure img{
-      width: 100%;
-    }*/
     
     #portfolio .divider{
       height: 0px;
     }
     
     /******* TAB ABOUT ME ****/
-    #about-me .content-wrapper{
-      margin: 25px 0;
-    }
 
     #about-me p{
       font-size: 1.3em;
@@ -608,11 +606,13 @@
     flex-direction: row;
   }
 
- 
   footer .content-wrapper{
-      width: 60%;
-      margin: 60px;
+      width: 50%;
       padding: 0;
+  }
+
+  footer h3{
+    margin: 25px 0 30px;
   }
 
   #contact-me{
@@ -620,22 +620,26 @@
     justify-content: space-between;
     flex-flow: row wrap; 
   } 
-
+/*** EMAIL ICON SIZE ***/
   .contact img{
     width: 35px;
   } 
- 
-  .contact{
-    margin-bottom: 0px;
-  }
 
+/*** SM ICON SIZES ***/
   footer .social-icons img{
-    width: 70%;
+    width: 80%;
   }
 
+  .contact{
+    margin: 0;
+  }
+
+  .social{
+    width: 45%;
+  }
 
 /*****************************/
-    /* COPYRIGHT */
+    /* TAB COPYRIGHT */
     .copyright h5{
       font-size: .7em;
     }
@@ -700,11 +704,6 @@
       width: 85%;
     }
 
-    /***** ALTERNATING PORTFOLIO CONTENT SIDE BY SIDE ON DESKTOPS  *****/
-    #portfolio .content-wrapper-flip article{
-      display: flex;
-      flex-direction: row-reverse;
-    }
     /***** ALT CONTENT WIDTHS *****/
     #portfolio article div{
       width: 44%;
@@ -739,10 +738,22 @@
     /******* DESK FOOTER *******/
     footer .content-wrapper{
       width: 50%;
-      margin: 80px;
       padding: 0;
     }
 
+    footer h3{
+      font-size: 2.5em;
+    }
+
+    /*** EMAIL ICON SIZE ***/
+  .contact img{
+    width: 43px;
+  }
+
+  /*** SM ICON SIZES ***/
+  footer .social-icons img{
+    width: 100%;
+  }
 
     /************************/
     .copyright{
